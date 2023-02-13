@@ -1,0 +1,19 @@
+services:
+  app:
+    image: dexli-backend:dev
+    build:
+      context: .
+      args:
+        uid: ${UID:-1000}
+    command: npm run start
+    ports:
+      - 8081:${FASTIFY_PORT:-3000}
+    volumes:
+      - ../src:/app/src:cached
+    environment:
+      DEBUG_MODE: ${DEBUG_MODE:-false}
+      BRIDGE_SERVER: ${BRIDGE_SERVER:-EU}
+      DEXCOM_ACCOUNT_NAME: ${DEXCOM_ACCOUNT_NAME:-""}
+      DEXCOM_PASSWORD: ${DEXCOM_PASSWORD:-""}
+      FASTIFY_PORT: ${FASTIFY_PORT:-3000}
+      API_KEY: ${API_KEY:-""}

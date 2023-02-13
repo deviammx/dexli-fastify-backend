@@ -1,0 +1,16 @@
+{
+  "name": "dexli-backend",
+  "version": "1.0.0",
+  "description": "Dexcom Proxy Backend",
+  "main": "src/index",
+  "scripts": {
+    "start": "node ./src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "fastify": "^4.12.0",
+    "request": "^2.88.2"
+  }
+}
