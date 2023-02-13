@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# dexcom server
+export BRIDGE_SERVER=EU
+
+# dexcom account
+export DEXCOM_ACCOUNT_NAME="name@example.com"
+export DEXCOM_PASSWORD="123456"
+
+# fetching
+# OPTIONAL: The maximum number of records to fetch per update.  Default: 1
+# export FETCH_MAX_COUNT=1
+# OPTIONAL: The time window to search for new data per update.  Default: 1440 (one day in minutes)
+# export FETCH_MINUTES=1440
+
+# ports
+export FASTIFY_PORT=8080
+
+# API-KEY
+export API_KEY="46asdkasd8u52l"
